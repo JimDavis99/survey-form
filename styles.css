@@ -1,0 +1,24 @@
+html {
+  display: block
+}
+
+body {
+  background-color: #164E6C;
+  font-family: monospace ;
+  text-align: center
+}
+
+
+input {
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: 20;
+  font-weight: bold;
+}
