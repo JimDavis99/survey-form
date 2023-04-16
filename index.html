@@ -6,9 +6,9 @@
   <body>
     <div class="container">
       <header>
-        <h1 id="title">FreeCodeCamp survey form</h1>
+        <h1 id="title">Example Survey Form</h1>
         <p id="description">
-        Tell us about yourself
+        please fill out your info below
         </p>
       </header>
       <form id="survey-form">
@@ -28,7 +28,7 @@
         </label>
         <label id="number-label">Age: 
           <input id="number" 
-          placeholder="type age here"
+          placeholder="select "
           type="number" 
           min="18" 
           max="120"
@@ -43,8 +43,10 @@
             <option>CSS</option>
             <option>JavaScript</option>
             <option>Java</option>
+            <option>other</option>
           </select>
         </label>
+        <hr/>
         <h3 id="choose">please choose one: </h3>
         <label>cat
           <input name="pet" type="radio" value="cat">
@@ -52,11 +54,23 @@
         <label>dog
           <input name="pet" type="radio" value="dog">
         </label>
+        <label>Other
+          <input name="pet" type="radio" value="other">
+        </label>
+        <label>If you selected other, please specify: 
+          <input 
+            placeholder="frog, lizard, etc."
+            id="name" 
+            type="text" 
+            />
+          </label>
+          <label>About you: <textarea rows="1" cols="30" placeholder="type here" value="about-you"></textarea>
+          </label>
+        </label>
+        <hr/>
         <label>Do you agree to the <a link href="">terms and conditions? </a><input type="checkbox" value="terms-and-conditions">
         </label>
         <label>Would you like to recieve emails? <input type="checkbox" value="recieve-emails">
-        </label>
-        <label>About you: <textarea rows="10" cols="30" placeholder="type here" value="about-you"></textarea>
         </label>
         <input value="submit" id="submit" type="submit">
       </form>
